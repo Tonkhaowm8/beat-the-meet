@@ -3,7 +3,7 @@
     <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1234,8150</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1254,8150</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -187,7 +187,7 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" CurrentIndex="{x:Null}" Length="{x:Null}" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="07a5b57a-9e27-4ddf-861b-070ec7899d78" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="562,998" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_2" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
+    <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" CurrentIndex="{x:Null}" Length="{x:Null}" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="5618bf65-3cad-4e20-b531-3904089f4e4f" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="562,998" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_2" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
       <uga:ForEachEmailConnections.Body>
         <ActivityAction x:TypeArguments="ugm:GmailMessage, x:Int32">
           <ActivityAction.Argument1>
