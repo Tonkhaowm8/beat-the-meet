@@ -3,7 +3,7 @@
     <x:Property Name="BreakTriggerScopeInArgument" Type="InArgument(x:String)" />
   </x:Members>
   <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
-  <sap:VirtualizedContainerService.HintSize>1302,14277</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1254,13972</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -153,7 +153,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1312,14212" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1062,13907" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="link" />
       <Variable x:TypeArguments="x:String" Name="fullName" />
@@ -214,7 +214,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="1250,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="1000,82" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="s:String[]">
           <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">emailBody</CSharpReference>
@@ -226,7 +226,7 @@
         </InArgument>
       </Assign.Value>
     </Assign>
-    <Assign sap:VirtualizedContainerService.HintSize="1250,82" sap2010:WorkflowViewState.IdRef="Assign_37">
+    <Assign sap:VirtualizedContainerService.HintSize="1000,82" sap2010:WorkflowViewState.IdRef="Assign_37">
       <Assign.To>
         <OutArgument x:TypeArguments="x:Int32">
           <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_59">count</CSharpReference>
@@ -236,7 +236,7 @@
         <InArgument x:TypeArguments="x:Int32">1</InArgument>
       </Assign.Value>
     </Assign>
-    <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" CurrentIndex="{x:Null}" Length="{x:Null}" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" ConnectionId="3e8307ec-4fbf-4389-a0e9-a0a827a39b45" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="1250,6924" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_2" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
+    <uga:ForEachEmailConnections ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" CurrentIndex="{x:Null}" Length="{x:Null}" BrowserFolder="Inbox" BrowserFolderLabelId="INBOX" DisplayName="For Each Email" FolderInputSelectionMode="Browse" sap:VirtualizedContainerService.HintSize="1000,6618" sap2010:WorkflowViewState.IdRef="ForEachEmailConnections_2" ImportantOnly="False" IncludeSubfolders="False" MarkAsRead="False" MaxResults="100" StarredOnly="False" UnreadOnly="False" UseConnectionService="True" WithAttachmentsOnly="False">
       <uga:ForEachEmailConnections.Body>
         <ActivityAction x:TypeArguments="ugm:GmailMessage, x:Int32">
           <ActivityAction.Argument1>
@@ -245,20 +245,13 @@
           <ActivityAction.Argument2>
             <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentEmailIndex" />
           </ActivityAction.Argument2>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="926,6726" sap2010:WorkflowViewState.IdRef="Sequence_41">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="966,6420" sap2010:WorkflowViewState.IdRef="Sequence_41">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="884,85" sap2010:WorkflowViewState.IdRef="MessageBox_3">
-              <ui:MessageBox.Text>
-                <InArgument x:TypeArguments="x:Object">
-                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">CurrentEmail.Subject</CSharpValue>
-                </InArgument>
-              </ui:MessageBox.Text>
-            </ui:MessageBox>
-            <Assign sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+            <Assign sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_3">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">
                   <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">emailBody</CSharpReference>
@@ -270,7 +263,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="884,400" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="924,400" sap2010:WorkflowViewState.IdRef="CommentOut_1">
               <ui:CommentOut.Body>
                 <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,321" sap2010:WorkflowViewState.IdRef="Sequence_40">
                   <sap:WorkflowViewStateService.ViewState>
@@ -295,7 +288,7 @@
                 </Sequence>
               </ui:CommentOut.Body>
             </ui:CommentOut>
-            <Assign DisplayName="split words" sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_24">
+            <Assign DisplayName="split words" sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_24">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">
                   <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_45">splitTime</CSharpReference>
@@ -307,14 +300,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="884,85" sap2010:WorkflowViewState.IdRef="MessageBox_5">
-              <ui:MessageBox.Text>
-                <InArgument x:TypeArguments="x:Object">
-                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">emailBody[1]</CSharpValue>
-                </InArgument>
-              </ui:MessageBox.Text>
-            </ui:MessageBox>
-            <Assign DisplayName="Month" sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_25">
+            <Assign DisplayName="Month" sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_25">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">
                   <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_46">month</CSharpReference>
@@ -326,7 +312,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Day" sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+            <Assign DisplayName="Day" sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_26">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">
                   <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_47">day</CSharpReference>
@@ -338,7 +324,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="Year" sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_27">
+            <Assign DisplayName="Year" sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_27">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">
                   <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">year</CSharpReference>
@@ -350,7 +336,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <Assign DisplayName="split 24 hour time" sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_28">
+            <Assign DisplayName="split 24 hour time" sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_28">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:String[]">
                   <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_49">timeSplit</CSharpReference>
@@ -362,7 +348,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="884,1000" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="924,1000" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <TryCatch.Try>
                 <Assign DisplayName="Hour" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_29">
                   <Assign.To>
@@ -462,7 +448,7 @@
                 </Catch>
               </TryCatch.Catches>
             </TryCatch>
-            <If DisplayName="Change to 24 hr time" sap:VirtualizedContainerService.HintSize="884,375" sap2010:WorkflowViewState.IdRef="If_22">
+            <If DisplayName="Change to 24 hr time" sap:VirtualizedContainerService.HintSize="924,375" sap2010:WorkflowViewState.IdRef="If_22">
               <If.Condition>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">splitTime[5].Contains("pm")</CSharpValue>
@@ -499,7 +485,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="884,544" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+            <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="924,544" sap2010:WorkflowViewState.IdRef="TryCatch_2">
               <TryCatch.Try>
                 <Assign DisplayName="Minute" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_46">
                   <Assign.To>
@@ -540,7 +526,7 @@
                 </Catch>
               </TryCatch.Catches>
             </TryCatch>
-            <Assign DisplayName="Create Datetime" sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_32">
+            <Assign DisplayName="Create Datetime" sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_32">
               <Assign.To>
                 <OutArgument x:TypeArguments="s:DateTime">
                   <CSharpReference x:TypeArguments="s:DateTime" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">targetTime</CSharpReference>
@@ -552,7 +538,7 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <Assign sap:VirtualizedContainerService.HintSize="884,82" sap2010:WorkflowViewState.IdRef="Assign_14">
+            <Assign sap:VirtualizedContainerService.HintSize="924,82" sap2010:WorkflowViewState.IdRef="Assign_14">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:Int32">
                   <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">checkTime</CSharpReference>
@@ -564,32 +550,32 @@
                 </InArgument>
               </Assign.Value>
             </Assign>
-            <If sap:VirtualizedContainerService.HintSize="884,2933" sap2010:WorkflowViewState.IdRef="If_23">
+            <If sap:VirtualizedContainerService.HintSize="924,2877" sap2010:WorkflowViewState.IdRef="If_23">
               <If.Condition>
                 <InArgument x:TypeArguments="x:Boolean">
                   <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81">checkTime &lt;= 0</CSharpValue>
                 </InArgument>
               </If.Condition>
               <If.Then>
-                <Sequence sap:VirtualizedContainerService.HintSize="850,2638" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                <Sequence sap:VirtualizedContainerService.HintSize="890,2559" sap2010:WorkflowViewState.IdRef="Sequence_53">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="788,2527" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="DisplayValue" ResizeWindow="None" WorkbookPath="meetDetails.xlsx">
+                  <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="828,2448" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="DisplayValue" ResizeWindow="None" WorkbookPath="meetDetails.xlsx">
                     <ueab:ExcelApplicationCard.Body>
                       <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="754,2258" sap2010:WorkflowViewState.IdRef="Sequence_56">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="794,2179" sap2010:WorkflowViewState.IdRef="Sequence_56">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="692,82" sap2010:WorkflowViewState.IdRef="Assign_39">
+                          <Assign sap:VirtualizedContainerService.HintSize="732,82" sap2010:WorkflowViewState.IdRef="Assign_39">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">
                                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_64">strTick</CSharpReference>
@@ -601,8 +587,8 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="692,90" sap2010:WorkflowViewState.IdRef="Delay_7" />
-                          <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="692,1895" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
+                          <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="732,90" sap2010:WorkflowViewState.IdRef="Delay_7" />
+                          <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="732,1816" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_1" SaveAfterEachRow="False">
                             <ueab:ExcelForEachRowX.Body>
                               <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                                 <ActivityAction.Argument1>
@@ -611,20 +597,13 @@
                                 <ActivityAction.Argument2>
                                   <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                                 </ActivityAction.Argument2>
-                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="658,1713" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="698,1634" sap2010:WorkflowViewState.IdRef="Sequence_61">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="596,85" sap2010:WorkflowViewState.IdRef="MessageBox_6">
-                                    <ui:MessageBox.Text>
-                                      <InArgument x:TypeArguments="x:Object">
-                                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_153">"Hello"</CSharpValue>
-                                      </InArgument>
-                                    </ui:MessageBox.Text>
-                                  </ui:MessageBox>
-                                  <If sap:VirtualizedContainerService.HintSize="596,1477" sap2010:WorkflowViewState.IdRef="If_24">
+                                  <If sap:VirtualizedContainerService.HintSize="636,1523" sap2010:WorkflowViewState.IdRef="If_24">
                                     <If.Condition>
                                       <InArgument x:TypeArguments="x:Boolean">
                                         <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_166">cRow["Date"].ToString() == strTick</CSharpValue>
@@ -641,20 +620,20 @@
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="562,1159" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                      <Sequence sap:VirtualizedContainerService.HintSize="602,1205" sap2010:WorkflowViewState.IdRef="Sequence_58">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <If sap:VirtualizedContainerService.HintSize="520,1071" sap2010:WorkflowViewState.IdRef="If_27">
+                                        <If sap:VirtualizedContainerService.HintSize="540,1094" sap2010:WorkflowViewState.IdRef="If_27">
                                           <If.Condition>
                                             <InArgument x:TypeArguments="x:Boolean">
                                               <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_168">cRow["Date"].ToString() == " "</CSharpValue>
                                             </InArgument>
                                           </If.Condition>
                                           <If.Then>
-                                            <Sequence sap:VirtualizedContainerService.HintSize="486,889" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                            <Sequence sap:VirtualizedContainerService.HintSize="506,912" sap2010:WorkflowViewState.IdRef="Sequence_68">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -736,13 +715,13 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="376,113" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                <Sequence sap:VirtualizedContainerService.HintSize="450,136" sap2010:WorkflowViewState.IdRef="Sequence_54">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:Continue sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="Continue_1" />
+                  <ui:Continue sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Continue_1" />
                 </Sequence>
               </If.Else>
             </If>
@@ -775,19 +754,19 @@
         <InArgument x:TypeArguments="x:String" />
       </uga:ForEachEmailConnections.ManualEntryFolder>
     </uga:ForEachEmailConnections>
-    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1250,6893" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="meetDetails.xlsx">
+    <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="1000,6894" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" WorkbookPath="meetDetails.xlsx">
       <ueab:ExcelApplicationCard.Body>
         <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1216,6624" sap2010:WorkflowViewState.IdRef="Sequence_74">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="766,6625" sap2010:WorkflowViewState.IdRef="Sequence_74">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="1154,6513" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" SaveAfterEachRow="False">
+            <ueab:ExcelForEachRowX DisplayName="For Each Excel Row" EmptyRowBehavior="Stop" HasHeaders="True" sap:VirtualizedContainerService.HintSize="704,6514" sap2010:WorkflowViewState.IdRef="ExcelForEachRowX_2" SaveAfterEachRow="False">
               <ueab:ExcelForEachRowX.Body>
                 <ActivityAction x:TypeArguments="ue:CurrentRowQuickHandle, x:Int32">
                   <ActivityAction.Argument1>
@@ -796,13 +775,13 @@
                   <ActivityAction.Argument2>
                     <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
                   </ActivityAction.Argument2>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1120,6331" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="670,6332" sap2010:WorkflowViewState.IdRef="Sequence_70">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="1058,82" sap2010:WorkflowViewState.IdRef="Assign_48">
+                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_48">
                       <Assign.To>
                         <OutArgument x:TypeArguments="s:DateTime">
                           <CSharpReference x:TypeArguments="s:DateTime" sap2010:WorkflowViewState.IdRef="CSharpReference`1_86">newTime</CSharpReference>
@@ -814,7 +793,7 @@
                         </InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="1058,82" sap2010:WorkflowViewState.IdRef="Assign_49">
+                    <Assign sap:VirtualizedContainerService.HintSize="608,82" sap2010:WorkflowViewState.IdRef="Assign_49">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">
                           <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_87">checkTime</CSharpReference>
@@ -826,15 +805,15 @@
                         </InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="1058,5976" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" DisplayName="While" sap:VirtualizedContainerService.HintSize="608,5977" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_2">
                       <ui:InterruptibleWhile.Body>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1022,5810" sap2010:WorkflowViewState.IdRef="Sequence_73">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="572,5811" sap2010:WorkflowViewState.IdRef="Sequence_73">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Assign sap:VirtualizedContainerService.HintSize="960,82" sap2010:WorkflowViewState.IdRef="Assign_50">
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_50">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">
                                 <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_88">checkTime</CSharpReference>
@@ -846,8 +825,8 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="960,90" sap2010:WorkflowViewState.IdRef="Delay_8" />
-                          <Assign sap:VirtualizedContainerService.HintSize="960,82" sap2010:WorkflowViewState.IdRef="Assign_51">
+                          <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="Delay_8" />
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_51">
                             <Assign.To>
                               <OutArgument x:TypeArguments="s:String[]">
                                 <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_89">finalSplit</CSharpReference>
@@ -859,7 +838,7 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="960,82" sap2010:WorkflowViewState.IdRef="Assign_52">
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_52">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">
                                 <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_90">finalHour</CSharpReference>
@@ -871,7 +850,7 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <If sap:VirtualizedContainerService.HintSize="960,352" sap2010:WorkflowViewState.IdRef="If_28">
+                          <If sap:VirtualizedContainerService.HintSize="510,352" sap2010:WorkflowViewState.IdRef="If_28">
                             <If.Condition>
                               <InArgument x:TypeArguments="x:Boolean">
                                 <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_180">finalSplit[1].Contains("pm")</CSharpValue>
@@ -908,7 +887,7 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <Assign sap:VirtualizedContainerService.HintSize="960,82" sap2010:WorkflowViewState.IdRef="Assign_54">
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_54">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:Int32">
                                 <CSharpReference x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpReference`1_92">finalMinute</CSharpReference>
@@ -920,7 +899,7 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="960,82" sap2010:WorkflowViewState.IdRef="Assign_55">
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_55">
                             <Assign.To>
                               <OutArgument x:TypeArguments="s:DateTime">
                                 <CSharpReference x:TypeArguments="s:DateTime" sap2010:WorkflowViewState.IdRef="CSharpReference`1_93">finalDateTime</CSharpReference>
@@ -932,7 +911,7 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="960,82" sap2010:WorkflowViewState.IdRef="Assign_56">
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_56">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:TimeSpan">
                                 <CSharpReference x:TypeArguments="x:TimeSpan" sap2010:WorkflowViewState.IdRef="CSharpReference`1_94">minutesLeft</CSharpReference>
@@ -944,7 +923,7 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <Assign sap:VirtualizedContainerService.HintSize="960,82" sap2010:WorkflowViewState.IdRef="Assign_57">
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_57">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">
                                 <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_95">link</CSharpReference>
@@ -956,7 +935,7 @@
                               </InArgument>
                             </Assign.Value>
                           </Assign>
-                          <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="960,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5">
+                          <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteCellX_5">
                             <ueab:WriteCellX.Cell>
                               <InArgument x:TypeArguments="ue:IReadWriteCellRef">
                                 <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_188">CurrentRow["Date"]</CSharpValue>
@@ -968,7 +947,7 @@
                               </InArgument>
                             </ueab:WriteCellX.Value>
                           </ueab:WriteCellX>
-                          <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="960,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6">
+                          <ueab:WriteCellX DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteCellX_6">
                             <ueab:WriteCellX.Cell>
                               <InArgument x:TypeArguments="ue:IReadWriteCellRef">
                                 <CSharpValue x:TypeArguments="ue:IReadWriteCellRef" sap2010:WorkflowViewState.IdRef="CSharpValue`1_190">CurrentRow["Link"]</CSharpValue>
@@ -980,7 +959,7 @@
                               </InArgument>
                             </ueab:WriteCellX.Value>
                           </ueab:WriteCellX>
-                          <ueab:SortX DisplayName="Sort Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="960,213" sap2010:WorkflowViewState.IdRef="SortX_3">
+                          <ueab:SortX DisplayName="Sort Range" HasHeaders="True" sap:VirtualizedContainerService.HintSize="510,213" sap2010:WorkflowViewState.IdRef="SortX_3">
                             <ueab:SortX.Body>
                               <ActivityAction>
                                 <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_75">
@@ -999,14 +978,14 @@
                               </InArgument>
                             </ueab:SortX.Range>
                           </ueab:SortX>
-                          <ueab:SaveExcelFileX DisplayName="Save Excel File" sap:VirtualizedContainerService.HintSize="960,85" sap2010:WorkflowViewState.IdRef="SaveExcelFileX_3">
+                          <ueab:SaveExcelFileX DisplayName="Save Excel File" sap:VirtualizedContainerService.HintSize="510,85" sap2010:WorkflowViewState.IdRef="SaveExcelFileX_3">
                             <ueab:SaveExcelFileX.Workbook>
                               <InArgument x:TypeArguments="ue:IWorkbookQuickHandle">
                                 <CSharpValue x:TypeArguments="ue:IWorkbookQuickHandle" sap2010:WorkflowViewState.IdRef="CSharpValue`1_193">Excel</CSharpValue>
                               </InArgument>
                             </ueab:SaveExcelFileX.Workbook>
                           </ueab:SaveExcelFileX>
-                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="960,3426" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="2c759190-ca99-4438-9b29-39abcb72e76c" Version="V2">
+                          <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="510,3426" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="2c759190-ca99-4438-9b29-39abcb72e76c" Version="V2">
                             <uix:NApplicationCard.Body>
                               <ActivityAction x:TypeArguments="x:Object">
                                 <ActivityAction.Argument>
@@ -1160,7 +1139,7 @@
                               </uix:TargetApp>
                             </uix:NApplicationCard.TargetApp>
                           </uix:NApplicationCard>
-                          <Assign sap:VirtualizedContainerService.HintSize="960,81" sap2010:WorkflowViewState.IdRef="Assign_58">
+                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_58">
                             <Assign.To>
                               <OutArgument x:TypeArguments="s:String[]">
                                 <CSharpReference x:TypeArguments="s:String[]" sap2010:WorkflowViewState.IdRef="CSharpReference`1_98">emailBody</CSharpReference>
